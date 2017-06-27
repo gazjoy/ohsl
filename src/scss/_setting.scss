@@ -17,13 +17,13 @@ $buttons: (
     ),
     primary: (
         default: (
-            background          : color(primary, pink),
-            border-color        : color(primary, pink),
+            background          : color(primary, aqua),
+            border-color        : color(primary, aqua),
             color               : color(neutral, white)
         ),
         hover: (
-            background          : darken(color(primary, pink), 20%),
-            border-color        : darken(color(primary, pink), 20%),
+            background          : darken(color(primary, aqua), 20%),
+            border-color        : darken(color(primary, aqua), 20%),
             color               : color(neutral, white)
         )
     )

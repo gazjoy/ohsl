@@ -28,6 +28,7 @@
     <link rel="mask-icon" href="<?php echo getUrl('build/vendor/favicons/safari-pinned-tab.svg'); ?>" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="<?php echo getUrl('build/vendor/normalize.css/normalize.css'); ?>" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:600,600i,900,900i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo getUrl('build/css/styles.css'); ?>" media="screen" />
     <?php /* ?>
     <script src="<?php echo getUrl('build/vendor/element-queries/ResizeSensor.js'); ?>"></script>
