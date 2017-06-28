@@ -11,3 +11,8 @@
 %u-font-family {
     font-family: $font-family;
 }
+
+.u-heading-font-family,
+%u-heading-font-family {
+    font-family: $heading-font-family;
+}

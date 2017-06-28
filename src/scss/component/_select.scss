@@ -5,9 +5,10 @@
 .select,
 %select {
     padding: 0;
-    padding-right: 2em;
+    padding-right: 2.5em;
     margin: 0;
     border: 1px solid color(neutral, dark);
+    border-radius: $border-radius;
     overflow: hidden;
     position: relative;
     background-color: color(neutral, white);
@@ -20,15 +21,13 @@
 
     &::after {
         @include chevron(color(neutral, dark), 8px, down, 1px);
-        top: 1.25em;
-    }
-
-    &::before {
-        @include chevron(color(neutral, dark), 8px, up, 1px);
-        top: 0.8em;
+        top: 50%;
+        margin-top: -6px;
     }
 
     select {
+        position: relative;
+        z-index: 1;
         padding: 0.54em;
         width: 130%;
         max-width: none;

@@ -1,14 +1,15 @@
 <?php
     $minus = array(
         'btn',
-        'btn--text',
-        'btn--block',
         'btn--sm',
         'btn--lg',
         'btn--ghost',
-        'btn--disabled'
+        'btn--disabled',
+        'btn--text',
+        'btn--block',
+        ':hover'
     );
-    $classes = Helper::parseCss('btn--');
+    $classes = Helper::parseCss('btn--brand-');
     $classes = array_diff($classes, $minus);
 
 ?>

@@ -15,15 +15,27 @@ $buttons: (
             color               : color(neutral, white)
         )
     ),
-    primary: (
+    brand-aqua: (
         default: (
-            background          : color(primary, aqua),
-            border-color        : color(primary, aqua),
+            background          : color(brand, aqua),
+            border-color        : color(brand, aqua),
             color               : color(neutral, white)
         ),
         hover: (
-            background          : darken(color(primary, aqua), 20%),
-            border-color        : darken(color(primary, aqua), 20%),
+            background          : darken(color(brand, aqua), 5%),
+            border-color        : darken(color(brand, aqua), 5%),
+            color               : color(neutral, white)
+        )
+    ),
+    brand-gold: (
+        default: (
+            background          : color(brand, gold),
+            border-color        : color(brand, gold),
+            color               : color(neutral, white)
+        ),
+        hover: (
+            background          : darken(color(brand, gold), 20%),
+            border-color        : darken(color(brand, gold), 20%),
             color               : color(neutral, white)
         )
     )
