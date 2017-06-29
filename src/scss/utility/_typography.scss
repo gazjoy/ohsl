@@ -16,3 +16,8 @@
 %u-heading-font-family {
     font-family: $heading-font-family;
 }
+
+.u-text-uppercase,
+%u-text-uppercase {
+    text-transform: uppercase;
+}

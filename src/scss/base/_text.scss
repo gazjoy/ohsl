@@ -25,7 +25,7 @@ html {
     font-size: $font-size;
     font-family: $font-family;
     line-height: $line-height;
-    color: color(neutral, darker);
+    color: color(brand, steel);
 }
 
 ul, ol, p {
@@ -81,12 +81,8 @@ mark {
 a,
 .link,
 %link {
-    color: color(neutral, black);
+    color: color(brand, steel);
     touch-action: manipulation;
-
-    &:hover {
-        color: color(neutral, dark);
-    }
 }
 
 

@@ -1,3 +1,3 @@
-<?php printPattern('demo/header/base'); ?>
-
-<?php printPattern('demo/footer/base'); ?>
+<?php printPattern('component/header/base'); ?>
+content
+<?php printPattern('component/footer/base'); ?>
