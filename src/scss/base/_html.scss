@@ -20,9 +20,5 @@ body {
 }
 
 .cc-mode-preview {
-    padding-top: spacing(xl) * 10;
-    @include breakpoint(screen(sm)) {
-        padding-left: spacing(xl) * 12;
-        padding-right: spacing(xl) * 4;
-    }
+    padding-top: 100px;
 }

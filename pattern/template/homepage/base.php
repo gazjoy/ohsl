@@ -2,18 +2,18 @@
 
 <main role="main" class="u-container">
     
-    <div class="title">
-        <h1 class="hero-heading">We are committed to the prevention of ill health at work.</h1>
-        <h2 class="h1"><em>OHSL provide quality occupational hygiene <br>solutions throughout the UK and Europe.</em></h2>
-    </div>
-        <!--
-        <abbr title="Occupational Hygiene Solutions Ltd.">OHSL</abbr> is a dynamic, professional consultancy.
-            
-        
-        <p>We are a team of expert Occupational Hygienists, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
-        -->
+    <section class="u-clearfix">
+        <div class="u-section-xl">
+            <h1 class="hero-heading u-measure-md-9">We are committed to the prevention of ill health at work.</h1>
+            <div class="u-measure-md-7">
+                <p class="lead">We are a team of expert Occupational Hygienists, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
+            </div>
+        </div>
+    </section>
             
             <hr>
+            
+            <h2 class="h1 u-measure-md-6">🇬🇧<em>OHSL provide quality occupational hygiene solutions throughout the UK and Europe.</em>🇪🇺</h2>
         <h2>Our Services</h2>
         
         <ul>

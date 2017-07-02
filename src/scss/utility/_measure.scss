@@ -1,0 +1,19 @@
+/**
+ * Measure
+ * Max width utility
+ */
+
+@include breakpoint(screen(md)) {
+    .u-measure-md-6 {
+        max-width: 50%;
+    }
+    .u-measure-md-7 {
+        max-width: 58.33%;
+    }
+    .u-measure-md-8 {
+        max-width: 66.67%;
+    }
+    .u-measure-md-9 {
+        max-width: 75%;
+    }
+}
