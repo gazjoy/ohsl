@@ -7,7 +7,22 @@ input, textarea, button {
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     height: 100%;
+}
+
+html {
+    background-color: color(neutral, lightest);
+}
+
+body {
+    background-color: color(neutral, white);
+}
+
+.cc-mode-preview {
+    padding-top: spacing(xl) * 10;
+    @include breakpoint(screen(sm)) {
+        padding-left: spacing(xl) * 12;
+        padding-right: spacing(xl) * 4;
+    }
 }

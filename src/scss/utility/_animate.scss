@@ -9,6 +9,11 @@
     animation: spin 0.3s infinite linear;
 }
 
+.u-throb,
+%u-throb {
+    animation: throb 3s infinite ease-in-out;
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -16,4 +21,16 @@
     to {
         transform: rotate(359deg);
     }
+}
+
+@keyframes whirr {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes throb {
+    0% { opacity: 1; }
+    20% { opacity: 0.5; }
+    100% { opacity: 1; }
 }

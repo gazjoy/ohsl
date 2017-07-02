@@ -21,3 +21,10 @@
 %u-text-uppercase {
     text-transform: uppercase;
 }
+
+.u-text-branded,
+%u-text-branded {
+    @extend %u-heading-font-family;
+    @extend %u-text-uppercase;
+    font-weight: $bold;
+}

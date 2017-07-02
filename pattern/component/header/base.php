@@ -5,13 +5,13 @@
             <?php printPattern('branding/logo/base'); ?>
         </a>
     </div>
-        <a href="#" class="header__link-menu" data-cc-toggle-action="toggle" data-cc-toggle-target="#header">Menu</a>
+        <a href="#" class="header__link-menu u-visible-xs" data-cc-toggle-action="toggle" data-cc-toggle-target="#header">Menu</a>
     </div>
     <div class="header__body">
-        <nav>
+        <nav class="header__nav">
             <ol class="nav--branded">
                 <li><a href="#">Overview</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Solutions</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Contact</a></li>
             </ol>

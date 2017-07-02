@@ -52,3 +52,25 @@
 %u-list-unordered {
     list-style: disc;
 }
+
+
+
+/**
+ * Branded List
+ *
+ */
+
+.u-list-branded,
+%u-list-branded {
+    list-style: none;
+    li {
+        position: relative;
+        &::before {
+            content: "• ";
+            color: color(brand, aqua);
+            position: absolute;
+            left: -1em;
+            line-height: 1.6;
+        }
+    }
+}
