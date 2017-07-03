@@ -17,3 +17,18 @@
         max-width: 75%;
     }
 }
+
+@include breakpoint(screen(lg)) {
+    .u-measure-lg-6 {
+        max-width: 50%;
+    }
+    .u-measure-lg-7 {
+        max-width: 58.33%;
+    }
+    .u-measure-lg-8 {
+        max-width: 66.67%;
+    }
+    .u-measure-lg-9 {
+        max-width: 75%;
+    }
+}

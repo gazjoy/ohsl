@@ -4,6 +4,7 @@
 
 .btn,
 %btn {
+    @extend %u-text-branded;
     padding: spacing(xs) spacing();
     border-radius: $border-radius;
     font-size: inherit;

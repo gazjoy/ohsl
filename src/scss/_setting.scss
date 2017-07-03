@@ -31,11 +31,23 @@ $buttons: (
         default: (
             background          : color(brand, gold),
             border-color        : color(brand, gold),
-            color               : color(neutral, white)
+            color               : color(brand, steel)
         ),
         hover: (
             background          : darken(color(brand, gold), 20%),
             border-color        : darken(color(brand, gold), 20%),
+            color               : color(neutral, white)
+        )
+    ),
+    brand-steel: (
+        default: (
+            background          : color(brand, steel),
+            border-color        : color(brand, steel),
+            color               : color(neutral, white)
+        ),
+        hover: (
+            background          : lighten(color(brand, steel), 10%),
+            border-color        : color(brand, steel),
             color               : color(neutral, white)
         )
     )

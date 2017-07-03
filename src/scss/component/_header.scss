@@ -1,4 +1,5 @@
 .header {
+    @extend %u-separator-bottom;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,10 +24,14 @@
         }
     }
     
-//    @include breakpoint(screen(sm)) {
-//        width: 120px;
-//        height: 100%;
-//    }
+    @include breakpoint(screen(sm)) {
+        .header__body {
+            margin-left: auto;
+        }
+        .header__footer {
+            display: none;
+        }
+    }
 }
 
 @include breakpoint(max-width screen(xs, max)) {
@@ -36,12 +41,14 @@
         visibility: hidden;
         transition: opacity 350ms cubic-bezier(0.23, 1, 0.32, 1);
     }
+    .header__body {
+        flex-grow: 1;
+    }
 }
 
 .header__body {
     @include flex;
     @include align-items(center);
-    flex-grow: 1;
 }
 .header__logo {
     display: block;
@@ -67,8 +74,10 @@
 }
 
 .header__nav {
-    float: right;
-    li {
-        display: inline-block;
+    @include breakpoint(screen(sm)) {
+        li {
+            display: inline-block;
+            margin-left: spacing();
+        }
     }
 }

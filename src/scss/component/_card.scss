@@ -4,6 +4,8 @@
 
 .card,
 %card {
+    display: block;
+    text-decoration: none;
     border: seperator(base, width) seperator(base, style) seperator(base, color);
     background-color: color(neutral, white);
     border-radius: $border-radius;
@@ -28,5 +30,9 @@
 
     > [class*="__footer"] {
         border-top: seperator(base, width) seperator(base, style) seperator(base, color);
+    }
+    
+    &:hover {
+        background-color: lighten(color(brand, sky), 10%);
     }
 }
