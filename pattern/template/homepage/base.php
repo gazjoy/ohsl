@@ -1,6 +1,7 @@
+<?php printPattern('component/skip/base'); ?>
 <?php printPattern('component/header/base'); ?>
 
-<main role="main">
+<main role="main" id="main">
     
     <section class="u-clearfix">
         <div class="u-section-xl u-container">
@@ -10,12 +11,13 @@
                 
             </div>
             <p><a href="/" class="btn btn--brand-steel">Book a Consultation</a></p>
+            <?php //printPattern('component/token/base'); ?>
         </div>
     </section>
     
     <section class="u-clearfix u-fill-neutral-white u-separator-top">
-        <div class="u-section-xl u-container">
-            <h2 class="hero-heading u-measure-md-9">Our Solutions</h2>
+        <div class="u-section-xl u-container-lg">
+            <h2 class="h1 u-measure-md-9">Our Solutions</h2>
 
             <ul class="u-list-unstyled grid g-gutter">
             
@@ -23,7 +25,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h2>Noise Monitoring</h2>
+                            <h3>Noise Monitoring</h3>
                             <p>We can conduct a workplace noise survey that will assist your company in complying with it’s duties.</p>
                         </div>
                     </a>
@@ -33,7 +35,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h2>Air Monitoring</h2>
+                            <h3>Air Monitoring</h3>
                             <p>We offer a monitoring service for most substances deemed hazardous to health.</p>
                         </div>
                     </a>
@@ -43,7 +45,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h2>Local Exhaust Ventilation (LEV)</h2>
+                            <h3>Local Exhaust Ventilation (LEV)</h3>
                             <p>We will provide a clear and concise report based on the Health and Safety Executive’s template.</p>
                         </div>
                     </a>
@@ -53,7 +55,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h2>Hazardous Substances (COSHH)</h2>
+                            <h3>Hazardous Substances (COSHH)</h3>
                             <p>We have many years of experience in the application of COSHH and can provide: COSHH assessments.</p>
                         </div>
                     </a>
@@ -63,7 +65,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h2>Indoor Air Quality &amp; Lighting</h2>
+                            <h3>Indoor Air Quality &amp; Lighting</h3>
                             <p>We are able to assist employers with this duty by conducting indoor air quality and lighting surveys.</p>
                         </div>
                     </a>
@@ -73,7 +75,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h2>Occupational Hygiene Training</h2>
+                            <h3>Occupational Hygiene Training</h3>
                             <p>We have many years experience of delivering training courses.</p>
                         </div>
                     </a>
@@ -81,9 +83,6 @@
                 
             </ul>
             
-            <div class="u-section-sm">
-                <p class="lead">🇬🇧🇪🇺We provide quality occupational hygiene solutions throughout the UK and Europe.</p>
-            </div>
         </div>
     </section>
     

@@ -1,3 +1,4 @@
+<?php printPattern('component/skip/base'); ?>
 <?php printPattern('component/header/base'); ?>
 
 <main role="main">

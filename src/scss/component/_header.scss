@@ -1,83 +1,160 @@
+/**
+ * Header
+ * offset the fixed header
+ */
+$header-height: 5.6em;
+
+[role="main"] {
+    padding-top: $header-height;
+}
+
 .header {
     @extend %u-separator-bottom;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    
+    @include flex;
+    @include align-items(center);
+    z-index: $z-9;
     overflow: hidden;
-    padding: spacing();
     background-color: color(neutral, white);
     transition: height 350ms cubic-bezier(0.23, 1, 0.32, 1);
 
-    @include breakpoint(max-width screen(xs, max)) {
+    @include breakpoint(max-width screen(sm, max)) {
         flex-direction: column;
-        height: 7em;
-        &.is-active {
-            height: 100%;
-            .header__body,
-            .header__footer {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
+        height: $header-height;
     }
     
-    @include breakpoint(screen(sm)) {
-        .header__body {
-            margin-left: auto;
-        }
+    @include breakpoint(screen(md)) {
+        padding-left: spacing();
+        padding-right: spacing();
+    }
+}
+
+
+/**
+ * Header State
+ */
+
+.header.is-active {
+    @include breakpoint(max-width screen(sm, max)) {
+        height: 100%;
+        background-color: rgba(255,255,255,0.95);
+        .header__body,
         .header__footer {
-            display: none;
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
 
-@include breakpoint(max-width screen(xs, max)) {
+
+/**
+ * Header Contents
+ */
+
+.header__header,
+.header__body,
+.header__footer {
+    padding: spacing();
+}
+
+.header__body,
+.header__footer {
+    width: 100%;
+}
+
+@include breakpoint(max-width screen(sm, max)) {
     .header__body,
     .header__footer {
         opacity: 0;
         visibility: hidden;
         transition: opacity 350ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-    .header__body {
-        flex-grow: 1;
+}
+
+
+/**
+ * Header Header
+ */
+
+.header__header {
+    @include breakpoint(max-width screen(sm, max)) {
+        @include flex;
+        @include align-items(center);
+        @include justify-content(space-between);
+        width: 100%;
     }
 }
+
+
+/**
+ * Header Body
+ */
 
 .header__body {
     @include flex;
     @include align-items(center);
+    flex-grow: 1;
 }
+
+
+/**
+ * Header Footer
+ */
+
+.header__footer {}
+
+
+/**
+ * Header Nav
+ */
+
+.header__nav {
+    @include breakpoint(max-width screen(sm, max)) {
+        font-size: 170%;
+    }
+    
+    @include breakpoint(screen(md)) {
+        width: 100%;
+        .nav {
+            @include flex;
+            flex-grow: 1;
+            li {
+                margin-left: spacing();
+            }
+            > *:first-child {
+                margin-left: auto;
+            }
+            > *:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+
+/**
+ * Header Logo
+ */
+
 .header__logo {
     display: block;
-//    @include breakpoint(max-width screen(xs, max)) {
-        width: 125px;
-        float: left;
-//    }
+    width: 125px;
+    float: left;
 }
+
+
+/**
+ * Header Menu Link
+ */
 
 .header__link-menu {
     @extend %u-text-branded;
-    text-decoration: none;
     float: right;
-    &:hover {
-        color: color(brand, aqua);
-    }
-    &:active {
-        color: color(brand, steel);
-    }
-    &.is-active {
-        @extend %u-throb;
-    }
-}
-
-.header__nav {
-    @include breakpoint(screen(sm)) {
-        li {
-            display: inline-block;
-            margin-left: spacing();
-        }
+    
+    @include breakpoint(max-width screen(sm, max)) {
+        font-size: 120%;
     }
 }
