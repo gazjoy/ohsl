@@ -1,0 +1,16 @@
+/**
+ * Logo
+ */
+
+.logo {
+    @include flex;
+    @include align-items(center);
+    
+    &__logo {
+        max-width: 50px;
+    }
+    
+    &__text {
+        
+    }
+}

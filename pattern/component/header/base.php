@@ -1,10 +1,8 @@
 <header role="banner" class="header" id="header">
     <div class="header__header">
-        <div>
-        <a href="#" class="header__logo">
-            <?php printPattern('branding/logo/base'); ?>
-        </a>
-    </div>
+        <div class="header__logo">
+            <?php printPattern('component/logo/base'); ?>
+        </div>
         <a href="#" class="header__link-menu u-visible-xs u-visible-sm" data-cc-toggle-action="toggle" data-cc-toggle-target="#header">Menu</a>
     </div>
     <div class="header__body">

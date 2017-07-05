@@ -4,24 +4,29 @@
 <main role="main" id="main">
     
     <section class="u-clearfix">
-        <div class="u-section-xl u-container">
+        <div class="u-section-lg u-container">
             <h1 class="hero-heading g-col-md-9 g-col-lg-9">We are <i class="u-text-brand-aqua">committed</i> to the prevention of ill health at work.</h1>
             <div class="u-section-sm g-col-md-9 g-col-lg-7">
                 <p class="lead">We are a team of expert <a href="profile">Occupational Hygienists</a>, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
                 
             </div>
-            <p><a href="/" class="btn btn--brand-steel">Book a Consultation</a></p>
+            <p><a href="/" class="btn btn--brand-aqua">Book a Consultation</a></p>
             <?php //printPattern('component/token/base'); ?>
         </div>
     </section>
     
-    <section class="u-clearfix u-fill-neutral-white u-separator-top">
-        <div class="u-section-xl u-container-lg">
+    <hr class="u-space-none" />
+    
+    <section class="u-clearfix u-fill-neutral-white">
+        <div class="u-section-lg u-container-lg">
             <h2 class="h1 u-measure-md-9">Our Solutions</h2>
-
-            <ul class="u-list-unstyled grid g-gutter">
+            <div class="g-col-md-10 g-col-lg-9">
+                <p>Occupational Hygiene Solutions Ltd. is a dynamic, professional consultancy service provider offering bespoke, quality occupational hygiene solutions to a wide range of industry sectors throughout the UK and Europe.</p>
+            </div>
             
-                <li class="g-col-sm-6 g-col-md-4 u-full-height">
+            <div class="grid g-gutter">
+            
+                <div class="g-col-sm-6 g-col-md-4 u-full-height">
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
@@ -29,9 +34,9 @@
                             <p>We can conduct a workplace noise survey that will assist your company in complying with it’s duties.</p>
                         </div>
                     </a>
-                </li>
+                </div>
                 
-                <li class="g-col-sm-6 g-col-md-4 u-full-height">
+                <div class="g-col-sm-6 g-col-md-4 u-full-height">
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
@@ -39,9 +44,9 @@
                             <p>We offer a monitoring service for most substances deemed hazardous to health.</p>
                         </div>
                     </a>
-                </li>
+                </div>
                 
-                <li class="g-col-sm-6 g-col-md-4 u-full-height">
+                <div class="g-col-sm-6 g-col-md-4 u-full-height">
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
@@ -49,9 +54,9 @@
                             <p>We will provide a clear and concise report based on the Health and Safety Executive’s template.</p>
                         </div>
                     </a>
-                </li>
+                </div>
                 
-                <li class="g-col-sm-6 g-col-md-4 u-full-height">
+                <div class="g-col-sm-6 g-col-md-4 u-full-height">
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
@@ -59,9 +64,9 @@
                             <p>We have many years of experience in the application of COSHH and can provide: COSHH assessments.</p>
                         </div>
                     </a>
-                </li>
+                </div>
                 
-                <li class="g-col-sm-6 g-col-md-4 u-full-height">
+                <div class="g-col-sm-6 g-col-md-4 u-full-height">
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
@@ -69,9 +74,9 @@
                             <p>We are able to assist employers with this duty by conducting indoor air quality and lighting surveys.</p>
                         </div>
                     </a>
-                </li>
+                </div>
                 
-                <li class="g-col-sm-6 g-col-md-4 u-full-height">
+                <div class="g-col-sm-6 g-col-md-4 u-full-height">
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
@@ -79,10 +84,19 @@
                             <p>We have many years experience of delivering training courses.</p>
                         </div>
                     </a>
-                </li>
+                </div>
                 
-            </ul>
+            </div>
             
+        </div>
+    </section>
+    
+    <hr class="u-space-none" />
+    
+    <section class="u-clearfix u-fill-brand-sky">
+        <div class="u-section-lg u-container-lg">
+            <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
+            add more here
         </div>
     </section>
     
@@ -105,4 +119,4 @@ the workplace. </li>
          
 </main>
 
-<?php //printPattern('component/footer/base'); ?>
+<?php printPattern('component/footer/base'); ?>
