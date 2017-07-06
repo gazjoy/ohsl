@@ -16,6 +16,9 @@
     .u-measure-md-9 {
         max-width: 75%;
     }
+    .u-measure-md-10 {
+        max-width: 83.33%;
+    }
 }
 
 @include breakpoint(screen(lg)) {

@@ -5,10 +5,9 @@
     
     <section class="u-clearfix">
         <div class="u-section-lg u-container">
-            <h1 class="hero-heading g-col-md-9 g-col-lg-9">We are <i class="u-text-brand-aqua">committed</i> to the prevention of ill health at work.</h1>
-            <div class="u-section-sm g-col-md-9 g-col-lg-7">
+            <h1 class="hero-heading">We are <i class="u-text-brand-aqua">committed</i> to the<br class="u-hidden-xs"> prevention of ill health at work.</h1>
+            <div class="u-section-sm u-measure-md-10 u-measure-lg-8">
                 <p class="lead">We are a team of expert <a href="profile">Occupational Hygienists</a>, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
-                
             </div>
             <p><a href="/" class="btn btn--brand-aqua">Book a Consultation</a></p>
             <?php //printPattern('component/token/base'); ?>
@@ -96,7 +95,46 @@
     <section class="u-clearfix u-fill-brand-sky">
         <div class="u-section-lg u-container-lg">
             <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
-            add more here
+            <p>Please leave us your name and contact email or telephone number and we will contact you to arrange a consultation.</p>
+            
+            <div class="grid">
+                <div class="g-col-sm-6">
+                    <form action="" autocomplete="off" class="">
+                
+                        <div class="field-group">
+                            <label class="field-group__label">Your Name</label>
+                            <div class="field-group__field">
+                                <input id="text" type="text" placeholder="What is your name?">
+                            </div>
+                        </div>
+                
+                        <div class="field-group">
+                            <label class="field-group__label">Your Telephone</label>
+                            <div class="field-group__field">
+                                <input id="text" type="text" placeholder="Please include area/country code">
+                            </div>
+                        </div>
+                
+                        <div class="field-group">
+                            <label class="field-group__label">Your Email</label>
+                            <div class="field-group__field">
+                                <input id="text" type="text" placeholder="We never send spam">
+                            </div>
+                        </div>
+                
+                        <div class="field-group">
+                            <label class="field-group__label na">Your Message</label>
+                            <div class="field-group__field">
+                                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                            </div>
+                        </div>
+                
+                        <p><button type="submit" class="btn btn--brand-aqua">Book a Consultation</button></p>
+                
+                    </form>
+                </div>
+            </div>
+            
         </div>
     </section>
     

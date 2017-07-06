@@ -15,7 +15,7 @@ textarea {
 label {
     margin-bottom: spacing(xs);
 
-    &.required::after {
+    &.na::after {
         content: "*";
     }
 }
@@ -131,7 +131,7 @@ abbr[title="Required"],
     color: color(contextual, error);
 }
 
-.required::after {
+.na::after {
     content: "*";
     color: color(contextual, error);
     margin-left: spacing(xs);

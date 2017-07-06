@@ -6,11 +6,16 @@
     @include flex;
     @include align-items(center);
     
+    > * {
+        flex-shrink: 0;
+    }
+    
     &__logo {
-        max-width: 50px;
+        width: 50px;
+        margin-right: spacing(sm);
     }
     
     &__text {
-        
+        width: 60px;
     }
 }
