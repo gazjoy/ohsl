@@ -14,10 +14,6 @@ textarea {
 
 label {
     margin-bottom: spacing(xs);
-
-    &.na::after {
-        content: "*";
-    }
 }
 
 input,
@@ -26,7 +22,7 @@ select[multiple=multiple] {
     background-color: color(neutral, white);
     border: 1px solid color(neutral, dark);
     border-radius: $border-radius;
-    padding: spacing(xs) spacing(sm);
+    padding: spacing(sm) spacing();
     width: 100%;
     color: color(neutral, dark);
 
@@ -107,6 +103,7 @@ fieldset {
     border: 0;
     margin-bottom: 2rem;
 }
+
 legend {
     @extend %h5;
 }
@@ -125,44 +122,20 @@ optgroup {
  * Validation
  */
 
-.error,
-abbr[title="Required"],
-.required em {
-    color: color(contextual, error);
-}
-
 .na::after {
     content: "*";
     color: color(contextual, error);
     margin-left: spacing(xs);
 }
 
-.valid,
-%valid {
-    color: color(contextual, success);
-}
-
-.is-error,
-%is-error {
+.is-invalid,
+%is-invalid,
+:invalid {
     border-color: color(contextual, error);
 }
 
 .is-valid,
-%is-valid {
+%is-valid,
+:valid {
     border-color: color(contextual, success);
 }
-
-.validation-advice {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 0.2rem;
-    > * {
-        margin: 0;
-    }
-}
-
-.has-error .validation-advice {
-    background-color: color(contextual, error-light);
-    border-color: color(contextual, error);
-}
-

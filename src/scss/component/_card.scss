@@ -31,6 +31,10 @@
     > [class*="__footer"] {
         border-top: seperator(base, width) seperator(base, style) seperator(base, color);
     }
+}
+
+a.card,
+a%card {
     
     &:hover {
         background-color: lighten(color(brand, sky), 10%);

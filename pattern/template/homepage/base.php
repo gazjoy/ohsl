@@ -9,14 +9,14 @@
             <div class="u-section-sm u-measure-md-10 u-measure-lg-8">
                 <p class="lead">We are a team of expert <a href="profile">Occupational Hygienists</a>, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
             </div>
-            <p><a href="/" class="btn btn--brand-aqua">Book a Consultation</a></p>
+            <p><a href="#booking" class="btn btn--brand-aqua">Book a Consultation</a></p>
             <?php //printPattern('component/token/base'); ?>
         </div>
     </section>
     
     <hr class="u-space-none" />
     
-    <section class="u-clearfix u-fill-neutral-white">
+    <section class="u-clearfix u-fill-neutral-white" id="solutions">
         <div class="u-section-lg u-container-lg">
             <h2 class="h1 u-measure-md-9">Our Solutions</h2>
             <div class="g-col-md-10 g-col-lg-9">
@@ -29,7 +29,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h3>Noise Monitoring</h3>
+                            <h3 class="h4">Noise Monitoring</h3>
                             <p>We can conduct a workplace noise survey that will assist your company in complying with it’s duties.</p>
                         </div>
                     </a>
@@ -39,7 +39,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h3>Air Monitoring</h3>
+                            <h3 class="h4">Air Monitoring</h3>
                             <p>We offer a monitoring service for most substances deemed hazardous to health.</p>
                         </div>
                     </a>
@@ -49,7 +49,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h3>Local Exhaust Ventilation (LEV)</h3>
+                            <h3 class="h4">Local Exhaust Ventilation (LEV)</h3>
                             <p>We will provide a clear and concise report based on the Health and Safety Executive’s template.</p>
                         </div>
                     </a>
@@ -59,7 +59,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h3>Hazardous Substances (COSHH)</h3>
+                            <h3 class="h4">Hazardous Substances (COSHH)</h3>
                             <p>We have many years of experience in the application of COSHH and can provide: COSHH assessments.</p>
                         </div>
                     </a>
@@ -69,7 +69,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h3>Indoor Air Quality &amp; Lighting</h3>
+                            <h3 class="h4">Indoor Air Quality &amp; Lighting</h3>
                             <p>We are able to assist employers with this duty by conducting indoor air quality and lighting surveys.</p>
                         </div>
                     </a>
@@ -79,7 +79,7 @@
                     <a href="/" class="card">
                         <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" />
                         <div class="card__body">
-                            <h3>Occupational Hygiene Training</h3>
+                            <h3 class="h4">Occupational Hygiene Training</h3>
                             <p>We have many years experience of delivering training courses.</p>
                         </div>
                     </a>
@@ -92,33 +92,37 @@
     
     <hr class="u-space-none" />
     
-    <section class="u-clearfix u-fill-brand-sky">
+    <section class="u-clearfix u-fill-neutral-lighter" id="booking">
         <div class="u-section-lg u-container-lg">
-            <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
-            <p>Please leave us your name and contact email or telephone number and we will contact you to arrange a consultation.</p>
+            <header class="title">
+                <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
+                <p class="h4">We will contact you at a conveinient time</p>
+            </header>
+            <p>Please leave us your name and contact email or telephone number and we will contact you to arrange a consultation. To help us best deal with your enquiry please provide as much information as possible.</p>
+            <br>
             
-            <div class="grid">
-                <div class="g-col-sm-6">
+            <div class="grid g-gutter-x-lg">
+                <div class="g-col-md-6">
                     <form action="" autocomplete="off" class="">
                 
                         <div class="field-group">
                             <label class="field-group__label">Your Name</label>
                             <div class="field-group__field">
-                                <input id="text" type="text" placeholder="What is your name?">
+                                <input id="text" type="text" placeholder="What is your name?" required>
                             </div>
                         </div>
                 
                         <div class="field-group">
                             <label class="field-group__label">Your Telephone</label>
                             <div class="field-group__field">
-                                <input id="text" type="text" placeholder="Please include area/country code">
+                                <input id="text" type="number" placeholder="Please include area/country code" required>
                             </div>
                         </div>
                 
                         <div class="field-group">
                             <label class="field-group__label">Your Email</label>
                             <div class="field-group__field">
-                                <input id="text" type="text" placeholder="We never send spam">
+                                <input id="text" type="email" placeholder="We never send spam" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </div>
                         </div>
                 
@@ -129,32 +133,87 @@
                             </div>
                         </div>
                 
-                        <p><button type="submit" class="btn btn--brand-aqua">Book a Consultation</button></p>
-                
+                        <p><button type="submit" class="btn btn--lg btn--brand-aqua">Book a Consultation</button></p>
+                        <p class="micro"><span class="na"></span> Denotes not required.</p>
                     </form>
+                </div>
+                <div class="g-col-md-6">
+                    <div class="card" style="margin-bottom: 0; margin-top: -4em; border-radius: 0;">
+                        <div class="card__header">
+                            <h4>Prefer to contact us by other means?</h4>
+                        </div>
+                        <div class="card__body">
+                            <ul class="u-list-unstyled lead">
+                                <li>Call: <a href="tel: <?php printData('company', 'telephone'); ?>"><?php printData('company', 'telephone'); ?></a></li>
+                                <li>Email: <a href="mailto: <?php printData('company', 'email'); ?>"><?php printData('company', 'email'); ?></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             
         </div>
     </section>
     
-     <!--  
-<h1>Occupational Hygiene Solutions Ltd. is a dynamic, professional consultancy service provider offering bespoke, quality occupational hygiene solutions to a wide range of industry sectors throughout the UK and Europe.</h1>
-<p class="lead">Based in the Midlands the founders offer over 40 years of Occupational Hygiene experience across a diverse range of disciplines.</p>
-
-<h3>Our Aims</h3> 
-<p><abbr title="Occupational Hygiene Solutions Limited">OHSL</abbr> is committed to the following aims.</p> 
-<ul> 
-    <li>Redefine industry standards on customer care, delivery of work and customer
-satisfaction. </li> 
-    <li>Provide a one stop shop for occupational hygiene solutions.</li> 
-    <li>Assist clients in proactively managing emerging health issues within
-the workplace. </li> 
-    <li>Provide a competitive service.</li> 
-</ul> 
-<p><a title="Occupational Hygiene Training" href="occupational-hygiene-training.php">Read More</a></p> 
--->
-         
+    <hr class="u-space-none" />
+    
+    <section class="u-clearfix u-fill-neutral-lighter" id="profile">
+        <div class="u-section-lg u-container-lg">
+            
+            <img src="ISO 9001 Reg Mark GIF-Col.gif" width="" height="" alt="" />
+            <img src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
+        
+            
+            <h2 class="h1 u-measure-md-9">Company Profile</h2>
+            <p class="lead">Based in the Midlands the founders offer over 40 years of Occupational Hygiene experience across a diverse range of disciplines.</p>
+            <h3>Our Aims</h3> 
+            <p><abbr title="Occupational Hygiene Solutions Limited">OHSL</abbr> is committed to the following aims.</p>
+            
+            <ul> 
+                <li>Redefine industry standards on customer care, delivery of work and customer
+            satisfaction. </li>
+                <li>Provide a one stop shop for occupational hygiene solutions.</li>
+                <li>Assist clients in proactively managing emerging health issues within
+            the workplace. </li>
+                <li>Provide a competitive service.</li> 
+            </ul>
+            
+            <p>Occupational Hygiene Solutions Ltd (OHSL) offers a professional consultancy
+            service that is independent and impartial. We offer a realistic alternative
+            to in-house resources and bring a very high level of practical experience,
+            know-how and confidentiality. Our aim is to deliver a market leading service
+            that enables you to effectively manage occupational hygiene risks within
+            your working environment.</p>
+            
+            <p>OHSL offers a bespoke, high quality service that is delivered by qualified,
+            highly motivated and experienced staff. From initial contact, through to
+            delivery and completion, a designated project manager is here to provide
+            you with a more personal approach, with turnaround times considerably less
+            than existing industry standards. All of this service is offered at a price
+            that represents excellent value for money.</p>
+            
+            <h3>Our Team</h3>
+            
+            <ul id="ident"> 
+                <li class="male"> 
+                    <h4>Gareth Ison <em>(<abbr title="Licentiate of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
+                    <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
+                </li>
+                <li class="female"> 
+                    <h4>Helen Thomas</h4>
+                    <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
+                </li>
+                <li class="male">
+                    <h4>Andy Wallace <em>(<abbr title="Licentiate of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
+                    <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
+                </li>
+            </ul>
+            
+            <p><a title="Occupational Hygiene Training" href="occupational-hygiene-training.php">Read More</a></p>
+        </div>
+    </section>
+    
 </main>
 
 <?php printPattern('component/footer/base'); ?>

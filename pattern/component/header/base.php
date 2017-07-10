@@ -8,9 +8,9 @@
     <div class="header__body">
         <nav class="header__nav">
             <ol class="nav nav--branded">
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#booking">Contact</a></li>
                 <li><a href="tel: <?php printData('company', 'telephone'); ?>">Call: <?php printData('company', 'telephone'); ?></a></li>
             </ol>
         </nav>
