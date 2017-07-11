@@ -3,18 +3,66 @@
 
 <main role="main" id="main">
     
-    <section class="u-clearfix">
+    <section class="u-clearfix" style="position: relative;">
+        
+        <div style="position: absolute; bottom: 5em; right: 5em; width: 16em; z-index: 0;" class="u-visible-lg u-visible-xl">
+        <?php echo file_get_contents('build/img/logo/o.svg'); ?>
+        </div>
+        
         <div class="u-section-lg u-container">
             <h1 class="hero-heading">We are <i class="u-text-brand-aqua">committed</i> to the<br class="u-hidden-xs"> prevention of ill health at work.</h1>
             <div class="u-section-sm u-measure-md-10 u-measure-lg-8">
-                <p class="lead">We are a team of expert <a href="profile">Occupational Hygienists</a>, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
+                <p class="lead">We are a team of expert <a href="#profile">Occupational Hygienists</a>, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
             </div>
-            <p><a href="#booking" class="btn btn--brand-aqua">Book a Consultation</a></p>
+            <p><a href="#booking" class="btn btn--lg btn--brand-aqua">Book a Consultation</a></p>
             <?php //printPattern('component/token/base'); ?>
         </div>
+        
     </section>
     
-    <hr class="u-space-none" />
+    <hr class="striped u-space-none" />
+    <section class="u-clearfix t-steel">
+        <div class="u-section-sm u-container">
+            <div class="grid g-gutter-x-lg">
+                <div class="g-col-md-4">
+                    <div class="u-text-center">
+                        <?php printPattern('component/step-icon/base'); ?>
+                        <div class="title">
+                            <h2>Identify</h2>
+                            <p class="lead">We identify the potential hazards in the workplace.</p>
+                        </div>
+                    </div>
+                    <hr class="u-visible-xs u-visible-sm" />
+                </div>
+                <div class="g-col-md-4">
+                    <div class="u-text-center">
+                        <span class="step-icon">
+                            <span class="step-icon__step t-gold">2</span>
+                            <?php printSvg('noun', 'clipboard-plus', 'icon--xl icon--circle t-gold'); ?>
+                        </span>
+                        <div class="title">
+                            <h2>Evaluate</h2>
+                            <p class="lead">We evaluate the potential risk involved.</p>
+                        </div>
+                    </div>
+                    <hr class="u-visible-xs u-visible-sm" />
+                </div>
+                <div class="g-col-md-4">
+                    <div class="u-text-center">
+                        <span class="step-icon">
+                            <span class="step-icon__step t-aqua">3</span>
+                            <?php printSvg('noun', 'clipboard-star', 'icon--xl icon--circle t-aqua'); ?>
+                        </span>
+                        <div class="title">
+                            <h2>Recommend</h2>
+                            <p class="lead">We recommend steps to mitigate the risk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="striped u-space-none" />
     
     <section class="u-clearfix u-fill-neutral-white" id="solutions">
         <div class="u-section-lg u-container-lg">
@@ -90,15 +138,16 @@
         </div>
     </section>
     
-    <hr class="u-space-none" />
+    <hr class="striped u-space-none" />
     
     <section class="u-clearfix u-fill-neutral-lighter" id="booking">
         <div class="u-section-lg u-container-lg">
             <header class="title">
                 <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
-                <p class="h4">We will contact you at a conveinient time</p>
+                <p class="h4">We will call you back to arrange a conveinient time</p>
             </header>
-            <p>Please leave us your name and contact email or telephone number and we will contact you to arrange a consultation. To help us best deal with your enquiry please provide as much information as possible.</p>
+            <br>
+            <p class="u-measure-md-8">Please leave us your name and contact email or telephone number and we will contact you to arrange a consultation. To help us best deal with your enquiry please provide as much information as possible.</p>
             <br>
             
             <div class="grid g-gutter-x-lg">
@@ -156,7 +205,7 @@
         </div>
     </section>
     
-    <hr class="u-space-none" />
+    <hr class="striped u-space-none" />
     
     <section class="u-clearfix u-fill-neutral-lighter" id="profile">
         <div class="u-section-lg u-container-lg">
