@@ -98,6 +98,7 @@
     <script src="<?php echo getUrl('build/vendor/jquery/jquery.js'); ?>"></script>
     <script src="<?php echo getUrl('build/vendor/jquery/jquery-no-conflict.js'); ?>"></script>
     <script src="<?php echo getUrl('build/vendor/jquery/jquery-ui.min.js'); ?>"></script>
+    <script src="<?php echo getUrl('build/vendor/enquire/enquire.js'); ?>"></script>
     <script src="<?php echo getUrl('build/js/chop.base.widget.js'); ?>"></script>
     <script src="<?php echo getUrl('build/js/chop.toggle.widget.js'); ?>"></script>
     <script src="<?php echo getUrl('build/js/chop.collapsible.widget.js'); ?>"></script>

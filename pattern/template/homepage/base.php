@@ -20,8 +20,9 @@
         
     </section>
     
-    <hr class="striped u-space-none" />
+    
     <section class="u-clearfix t-steel">
+        <hr class="striped u-space-none" />
         <div class="u-section-sm u-container">
             <div class="grid g-gutter-x-lg">
                 <div class="g-col-md-4">
@@ -62,9 +63,10 @@
             </div>
         </div>
     </section>
-    <hr class="striped u-space-none" />
+    
     
     <section class="u-clearfix u-fill-neutral-white" id="solutions">
+        <hr class="striped u-space-none" />
         <div class="u-section-lg u-container-lg">
             <h2 class="h1 u-measure-md-9">Our Solutions</h2>
             <div class="g-col-md-10 g-col-lg-9">
@@ -138,9 +140,69 @@
         </div>
     </section>
     
-    <hr class="striped u-space-none" />
+    
+    <section class="u-clearfix u-fill-neutral-lighter" id="profile">
+        <hr class="striped u-space-none" />
+        
+        <div class="u-section-lg u-container-lg">
+            
+            <img src="ISO 9001 Reg Mark GIF-Col.gif" width="" height="" alt="" />
+            <img src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
+        
+            
+            <h2 class="h1 u-measure-md-9">Company Profile</h2>
+            <p class="lead">Based in the Midlands the founders offer over 40 years of Occupational Hygiene experience across a diverse range of disciplines.</p>
+            <h3>Our Aims</h3> 
+            <p><abbr title="Occupational Hygiene Solutions Limited">OHSL</abbr> is committed to the following aims.</p>
+            
+            <ul> 
+                <li>Redefine industry standards on customer care, delivery of work and customer
+            satisfaction. </li>
+                <li>Provide a one stop shop for occupational hygiene solutions.</li>
+                <li>Assist clients in proactively managing emerging health issues within
+            the workplace. </li>
+                <li>Provide a competitive service.</li> 
+            </ul>
+            
+            <p>Occupational Hygiene Solutions Ltd (OHSL) offers a professional consultancy
+            service that is independent and impartial. We offer a realistic alternative
+            to in-house resources and bring a very high level of practical experience,
+            know-how and confidentiality. Our aim is to deliver a market leading service
+            that enables you to effectively manage occupational hygiene risks within
+            your working environment.</p>
+            
+            <p>OHSL offers a bespoke, high quality service that is delivered by qualified,
+            highly motivated and experienced staff. From initial contact, through to
+            delivery and completion, a designated project manager is here to provide
+            you with a more personal approach, with turnaround times considerably less
+            than existing industry standards. All of this service is offered at a price
+            that represents excellent value for money.</p>
+            
+            <h3>Our Team</h3>
+            
+            <ul id="ident"> 
+                <li class="male"> 
+                    <h4>Gareth Ison <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
+                    <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
+                </li>
+                <li class="female"> 
+                    <h4>Helen Thomas <em>(<abbr title="Associate Membership of the Faculty of Occupational Hygiene">AFOH</abbr>)</em></h4>
+                    <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
+                </li>
+                <li class="male">
+                    <h4>Andy Wallace <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
+                    <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
+                </li>
+            </ul>
+            
+            <p><a title="Occupational Hygiene Training" href="occupational-hygiene-training.php">Read More</a></p>
+        </div>
+    </section>
+    
+    
     
     <section class="u-clearfix u-fill-neutral-lighter" id="booking">
+        <hr class="striped u-space-none" />
         <div class="u-section-lg u-container-lg">
             <header class="title">
                 <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
@@ -205,64 +267,14 @@
         </div>
     </section>
     
-    <hr class="striped u-space-none" />
-    
-    <section class="u-clearfix u-fill-neutral-lighter" id="profile">
-        <div class="u-section-lg u-container-lg">
-            
-            <img src="ISO 9001 Reg Mark GIF-Col.gif" width="" height="" alt="" />
-            <img src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
-        
-            
-            <h2 class="h1 u-measure-md-9">Company Profile</h2>
-            <p class="lead">Based in the Midlands the founders offer over 40 years of Occupational Hygiene experience across a diverse range of disciplines.</p>
-            <h3>Our Aims</h3> 
-            <p><abbr title="Occupational Hygiene Solutions Limited">OHSL</abbr> is committed to the following aims.</p>
-            
-            <ul> 
-                <li>Redefine industry standards on customer care, delivery of work and customer
-            satisfaction. </li>
-                <li>Provide a one stop shop for occupational hygiene solutions.</li>
-                <li>Assist clients in proactively managing emerging health issues within
-            the workplace. </li>
-                <li>Provide a competitive service.</li> 
-            </ul>
-            
-            <p>Occupational Hygiene Solutions Ltd (OHSL) offers a professional consultancy
-            service that is independent and impartial. We offer a realistic alternative
-            to in-house resources and bring a very high level of practical experience,
-            know-how and confidentiality. Our aim is to deliver a market leading service
-            that enables you to effectively manage occupational hygiene risks within
-            your working environment.</p>
-            
-            <p>OHSL offers a bespoke, high quality service that is delivered by qualified,
-            highly motivated and experienced staff. From initial contact, through to
-            delivery and completion, a designated project manager is here to provide
-            you with a more personal approach, with turnaround times considerably less
-            than existing industry standards. All of this service is offered at a price
-            that represents excellent value for money.</p>
-            
-            <h3>Our Team</h3>
-            
-            <ul id="ident"> 
-                <li class="male"> 
-                    <h4>Gareth Ison <em>(<abbr title="Licentiate of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
-                    <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
-                </li>
-                <li class="female"> 
-                    <h4>Helen Thomas</h4>
-                    <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
-                </li>
-                <li class="male">
-                    <h4>Andy Wallace <em>(<abbr title="Licentiate of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
-                    <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
-                </li>
-            </ul>
-            
-            <p><a title="Occupational Hygiene Training" href="occupational-hygiene-training.php">Read More</a></p>
-        </div>
-    </section>
-    
 </main>
+
+<div class="js-anchor-nav">
+    <a href="#main">
+        
+        <?php printSvg('general', 'arrow-up6'); ?>
+        <span>Top</span>
+    </a>
+</div>
 
 <?php printPattern('component/footer/base'); ?>
