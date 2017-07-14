@@ -7,15 +7,23 @@
     @include align-items(center);
     
     > * {
-        flex-shrink: 0;
+        display: inherit;
     }
     
     &__logo {
-        width: 50px;
         margin-right: spacing(sm);
     }
     
-    &__text {
-        width: 60px;
+    @include breakpoint(screen(sm)) {
+        > * {
+            flex-shrink: 0;
+        }
+        &__logo {
+            width: 50px;
+        }
+    
+        &__text {
+            width: 60px;
+        }
     }
 }

@@ -30,7 +30,7 @@ var breakpoint = {
         var header = $('#header');
         
         function addAnchor() {
-            $('.js-anchor-nav a[href^="#"]').on('click', function(event) {
+            $('a.js-anchor-nav[href^="#"]').on('click', function(event) {
                 var target = $(this.getAttribute('href'));
                 if( target.length ) {
                     event.preventDefault();
@@ -41,19 +41,25 @@ var breakpoint = {
             });
         }
         
-        function removeAnchor() {
-            $('.js-anchor-nav a[href^="#"]').off('click');
-        }
+        addAnchor();
         
-        enquire.register(breakpoint.sm, {
-            setup : function() {
-                this.unmatch();
-            },
-            match: function () {
-                addAnchor();
-            },
-            unmatch: function () {
-                removeAnchor();
+        
+        // =============================================
+        // Back to Top Anchor
+        // =============================================
+        
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 300,
+        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+        offset_opacity = 1200,
+        //grab the "back to top" link
+        $back_to_top = $('.js-topper');
+
+        //hide or show the "back to top" link
+        $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('is-active') : $back_to_top.removeClass('is-active is-faded');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                $back_to_top.addClass('is-faded');
             }
         });
         

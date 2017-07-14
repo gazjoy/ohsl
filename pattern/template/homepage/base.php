@@ -14,7 +14,7 @@
             <div class="u-section-sm u-measure-md-10 u-measure-lg-8">
                 <p class="lead">We are a team of expert <a href="#profile">Occupational Hygienists</a>, we can help your business by ensuring that workplaces are safe environments for your employees. We do this by identifying the hazards, evaluating the risks and recommending effective control measures.</p>
             </div>
-            <p><a href="#booking" class="btn btn--lg btn--brand-aqua">Book a Consultation</a></p>
+            <p><a href="#booking" class="btn btn--lg btn--brand-aqua js-anchor-nav">Book a Consultation</a></p>
             <?php //printPattern('component/token/base'); ?>
         </div>
         
@@ -28,9 +28,9 @@
                 <div class="g-col-md-4">
                     <div class="u-text-center">
                         <?php printPattern('component/step-icon/base'); ?>
-                        <div class="title">
+                        <div>
                             <h2>Identify</h2>
-                            <p class="lead">We identify the potential hazards in the workplace.</p>
+                            <p>We identify the potential hazards in the workplace.</p>
                         </div>
                     </div>
                     <hr class="u-visible-xs u-visible-sm" />
@@ -41,9 +41,9 @@
                             <span class="step-icon__step t-gold">2</span>
                             <?php printSvg('noun', 'clipboard-plus', 'icon--xl icon--circle t-gold'); ?>
                         </span>
-                        <div class="title">
+                        <div>
                             <h2>Evaluate</h2>
-                            <p class="lead">We evaluate the potential risk involved.</p>
+                            <p>We evaluate the potential risk involved.</p>
                         </div>
                     </div>
                     <hr class="u-visible-xs u-visible-sm" />
@@ -54,9 +54,9 @@
                             <span class="step-icon__step t-aqua">3</span>
                             <?php printSvg('noun', 'clipboard-star', 'icon--xl icon--circle t-aqua'); ?>
                         </span>
-                        <div class="title">
+                        <div>
                             <h2>Recommend</h2>
-                            <p class="lead">We recommend steps to mitigate the risk.</p>
+                            <p>We recommend steps to mitigate the risk.</p>
                         </div>
                     </div>
                 </div>
@@ -65,12 +65,23 @@
     </section>
     
     
-    <section class="u-clearfix u-fill-neutral-white" id="solutions">
-        <hr class="striped u-space-none" />
+    <section class="u-clearfix" id="solutions">
         <div class="u-section-lg u-container-lg">
-            <h2 class="h1 u-measure-md-9">Our Solutions</h2>
+            
+            <div style="position: absolute; right: 10%; font-size: 800%;">
+                <span style="display: inline-block; transform: rotate(-20deg);">🇬🇧</span>
+                <span style="display: inline-block; transform: rotate(20deg);">🇪🇺</span>
+            </div>
+            
+            <header class="title">
+                <h2 class="h1 u-measure-md-9">Our Solutions</h2>
+                <p class="h4"><i>Experience across a diverse range of disciplines</i></p>
+            </header>
+            <br>
+            
             <div class="g-col-md-10 g-col-lg-9">
                 <p>Occupational Hygiene Solutions Ltd. is a dynamic, professional consultancy service provider offering bespoke, quality occupational hygiene solutions to a wide range of industry sectors throughout the UK and Europe.</p>
+                <br>
             </div>
             
             <div class="grid g-gutter">
@@ -141,61 +152,88 @@
     </section>
     
     
-    <section class="u-clearfix u-fill-neutral-lighter" id="profile">
+    <section class="u-clearfix" id="profile">
         <hr class="striped u-space-none" />
         
         <div class="u-section-lg u-container-lg">
             
-            <img src="ISO 9001 Reg Mark GIF-Col.gif" width="" height="" alt="" />
-            <img src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
-        
+            <div class="grid g-stretch-first">
+                <div>
+                    <header class="title">
+                        <h2 class="h1 u-measure-md-9">Company Profile</h2>
+                        <p class="h4"><i>High quality service delivered by experienced staff</i></p>
+                    </header>
+                </div>
+                <div>
+                    <img src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
+                </div>
+            </div>
+            <br>
             
-            <h2 class="h1 u-measure-md-9">Company Profile</h2>
-            <p class="lead">Based in the Midlands the founders offer over 40 years of Occupational Hygiene experience across a diverse range of disciplines.</p>
-            <h3>Our Aims</h3> 
-            <p><abbr title="Occupational Hygiene Solutions Limited">OHSL</abbr> is committed to the following aims.</p>
+            <div class="grid g-gutter-x-lg">
+                <div class="g-col-md-8">
+                    <div>
+                        <p>Occupational Hygiene Solutions Ltd (OHSL) offers a professional consultancy
+                        service that is independent and impartial. We offer a realistic alternative
+                        to in-house resources and bring a very high level of practical experience,
+                        know-how and confidentiality. Our aim is to deliver a market leading service
+                        that enables you to effectively manage occupational hygiene risks within
+                        your working environment.</p>
             
-            <ul> 
-                <li>Redefine industry standards on customer care, delivery of work and customer
-            satisfaction. </li>
-                <li>Provide a one stop shop for occupational hygiene solutions.</li>
-                <li>Assist clients in proactively managing emerging health issues within
-            the workplace. </li>
-                <li>Provide a competitive service.</li> 
-            </ul>
+                        <p>OHSL offers a bespoke, high quality service that is delivered by qualified,
+                        highly motivated and experienced staff. From initial contact, through to
+                        delivery and completion, a designated project manager is here to provide
+                        you with a more personal approach, with turnaround times considerably less
+                        than existing industry standards. All of this service is offered at a price
+                        that represents excellent value for money.</p>
+                    </div>
+                </div>
+                <div class="g-col-md-4">
+                    
+                    
+                    <header class="title">
+                        <h3>Our Aims</h3>
+                        <p class="h5"><i>We are committed to the following aims</i></p>
+                    </header>
+                    <br>
+                    
+                    <ul> 
+                        <li>Redefine industry standards on customer care, delivery of work and customer
+                    satisfaction. </li>
+                        <li>Provide a one stop shop for occupational hygiene solutions.</li>
+                        <li>Assist clients in proactively managing emerging health issues within
+                    the workplace. </li>
+                        <li>Provide a competitive service.</li> 
+                    </ul>
+                </div>
+            </div>
             
-            <p>Occupational Hygiene Solutions Ltd (OHSL) offers a professional consultancy
-            service that is independent and impartial. We offer a realistic alternative
-            to in-house resources and bring a very high level of practical experience,
-            know-how and confidentiality. Our aim is to deliver a market leading service
-            that enables you to effectively manage occupational hygiene risks within
-            your working environment.</p>
             
-            <p>OHSL offers a bespoke, high quality service that is delivered by qualified,
-            highly motivated and experienced staff. From initial contact, through to
-            delivery and completion, a designated project manager is here to provide
-            you with a more personal approach, with turnaround times considerably less
-            than existing industry standards. All of this service is offered at a price
-            that represents excellent value for money.</p>
             
             <h3>Our Team</h3>
             
-            <ul id="ident"> 
-                <li class="male"> 
-                    <h4>Gareth Ison <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
-                    <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
-                </li>
-                <li class="female"> 
-                    <h4>Helen Thomas <em>(<abbr title="Associate Membership of the Faculty of Occupational Hygiene">AFOH</abbr>)</em></h4>
-                    <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
-                </li>
-                <li class="male">
-                    <h4>Andy Wallace <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
-                    <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
-                </li>
-            </ul>
+            <div class="grid g-gutter-lg">
+                <div class="g-col-md-4">
+                    <div>
+                        <h4>Gareth Ison <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
+                        <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
+                    </div>
+                </div>
+                <div class="g-col-md-4">
+                    <div>
+                        <h4>Helen Thomas <em>(<abbr title="Associate Membership of the Faculty of Occupational Hygiene">AFOH</abbr>)</em></h4>
+                        <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
+                    </div>
+                </div>
+                <div class="g-col-md-4">
+                    <div>
+                        <h4>Andy Wallace <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
+                        <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
+                    </div>
+                </div>
+            </div>
             
-            <p><a title="Occupational Hygiene Training" href="occupational-hygiene-training.php">Read More</a></p>
+            <p><a href="#booking" class="btn btn--lg btn--brand-aqua btn--ghost js-anchor-nav">Contact The Team</a></p>
         </div>
     </section>
     
@@ -206,7 +244,7 @@
         <div class="u-section-lg u-container-lg">
             <header class="title">
                 <h2 class="h1 u-measure-md-9">Book a Consultation</h2>
-                <p class="h4">We will call you back to arrange a conveinient time</p>
+                <p class="h4"><i>We will call you back to arrange a conveinient time</i></p>
             </header>
             <br>
             <p class="u-measure-md-8">Please leave us your name and contact email or telephone number and we will contact you to arrange a consultation. To help us best deal with your enquiry please provide as much information as possible.</p>
@@ -269,12 +307,5 @@
     
 </main>
 
-<div class="js-anchor-nav">
-    <a href="#main">
-        
-        <?php printSvg('general', 'arrow-up6'); ?>
-        <span>Top</span>
-    </a>
-</div>
-
+<?php printPattern('component/topper/base'); ?>
 <?php printPattern('component/footer/base'); ?>

@@ -42,7 +42,7 @@
 </head>
 <body class="cc-mode-<?php echo !isset($_GET['preview'])?'library':'preview' ?>">
 
-    <div class="cc-devbar"><span class="cc-devbar__bp"></span></div>
+    <!-- <div class="cc-devbar"><span class="cc-devbar__bp"></span></div> -->
 
     <?php if(!isset($_GET['preview'])) : ?>
         <header class="cc-header">
