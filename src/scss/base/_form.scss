@@ -20,7 +20,7 @@ input,
 textarea,
 select[multiple=multiple] {
     background-color: color(neutral, white);
-    border: 1px solid color(neutral, dark);
+    border: 2px solid color(neutral, dark);
     border-radius: $border-radius;
     padding: spacing(sm) spacing();
     width: 100%;
@@ -122,7 +122,7 @@ optgroup {
  * Validation
  */
 
-.na::after {
+.required::after {
     content: "*";
     color: color(contextual, error);
     margin-left: spacing(xs);

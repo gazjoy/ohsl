@@ -5,9 +5,7 @@
     
     <section class="u-clearfix" style="position: relative;">
         
-        <div style="position: absolute; bottom: 5em; right: 5em; width: 16em; z-index: 0;" class="u-visible-lg u-visible-xl">
-        <?php echo file_get_contents('build/img/logo/o.svg'); ?>
-        </div>
+  
         
         <div class="u-section-lg u-container">
             <h1 class="hero-heading">We are <i class="u-text-brand-aqua">committed</i> to the<br class="u-hidden-xs"> prevention of ill health at work.</h1>
@@ -23,7 +21,7 @@
     
     <section class="u-clearfix t-steel">
         <hr class="striped u-space-none" />
-        <div class="u-section-sm u-container">
+        <div class="u-section-sm u-container-lg">
             <div class="grid g-gutter-x-lg">
                 <div class="g-col-md-4">
                     <div class="u-text-center">
@@ -67,11 +65,6 @@
     
     <section class="u-clearfix" id="solutions">
         <div class="u-section-lg u-container-lg">
-            
-            <div style="position: absolute; right: 10%; font-size: 800%;">
-                <span style="display: inline-block; transform: rotate(-20deg);">🇬🇧</span>
-                <span style="display: inline-block; transform: rotate(20deg);">🇪🇺</span>
-            </div>
             
             <header class="title">
                 <h2 class="h1 u-measure-md-9">Our Solutions</h2>
@@ -152,27 +145,21 @@
     </section>
     
     
-    <section class="u-clearfix" id="profile">
+    <section class="u-clearfix u-fill-neutral-lighter" id="profile">
         <hr class="striped u-space-none" />
         
-        <div class="u-section-lg u-container-lg">
-            
-            <div class="grid g-stretch-first">
-                <div>
+        <div class="u-section-sm u-container-lg">
+			
+            <div class="grid g-gutter-x-lg">
+                <div class="g-col-md-8">
+					
                     <header class="title">
                         <h2 class="h1 u-measure-md-9">Company Profile</h2>
                         <p class="h4"><i>High quality service delivered by experienced staff</i></p>
                     </header>
-                </div>
-                <div>
-                    <img src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
-                </div>
-            </div>
-            <br>
-            
-            <div class="grid g-gutter-x-lg">
-                <div class="g-col-md-8">
                     <div>
+						<img class="u-pull-right" style="margin-left: 10px;" src="<?php echo getUrl('build/img/accreditation/ISO 9001 Reg Mark GIF-Col.gif'); ?>" width="139" height="100" alt="ISO 9001 Reg Mark Colour" />
+						
                         <p>Occupational Hygiene Solutions Ltd (OHSL) offers a professional consultancy
                         service that is independent and impartial. We offer a realistic alternative
                         to in-house resources and bring a very high level of practical experience,
@@ -187,17 +174,39 @@
                         than existing industry standards. All of this service is offered at a price
                         that represents excellent value for money.</p>
                     </div>
+					
+		            
+					
                 </div>
                 <div class="g-col-md-4">
                     
+                    <header class="title">
+                        <h3>Proud to be British <span style="display: inline-block;">🇬🇧</span></h3>
+                        <p class="h5"><i>and European</i> <span style="display: inline-block;">🇪🇺</span></p>
+                    </header>
+					
+					<p>Occupational Hygiene Solutions Ltd. (OHSL) is a dynamic, professional consultancy service provider offering bespoke, quality occupational hygiene solutions to a wide range of industry sectors throughout the UK and Europe.</p>
+					<p>Based in the Midlands the founders offer over 40 years of Occupational Hygiene experience across a diverse range of disciplines.</p>
                     
+                </div>
+            </div>
+			
+		</div>
+		
+		<div class="u-section-sm u-container-lg">
+            
+			<hr>
+            <div class="grid g-gutter-x-lg">
+				
+                <div class="g-col-md-4">
+					
                     <header class="title">
                         <h3>Our Aims</h3>
                         <p class="h5"><i>We are committed to the following aims</i></p>
                     </header>
                     <br>
                     
-                    <ul> 
+                    <ul class="u-list-flush"> 
                         <li>Redefine industry standards on customer care, delivery of work and customer
                     satisfaction. </li>
                         <li>Provide a one stop shop for occupational hygiene solutions.</li>
@@ -205,41 +214,47 @@
                     the workplace. </li>
                         <li>Provide a competitive service.</li> 
                     </ul>
+					
+				</div>
+				
+                <div class="g-col-md-8">
+					
+		            <h3>Our Team</h3>
+            
+		            <div class="grid g-gutter-lg">
+		                <div class="g-col-lg-4">
+		                    <div>
+		                        <h4>Gareth Ison <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
+		                        <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
+		                    </div>
+		                </div>
+		                <div class="g-col-lg-4">
+		                    <div>
+		                        <h4>Helen Thomas <em>(<abbr title="Associate Membership of the Faculty of Occupational Hygiene">AFOH</abbr>)</em></h4>
+		                        <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
+		                    </div>
+		                </div>
+		                <div class="g-col-lg-4">
+		                    <div>
+		                        <h4>Andy Wallace <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
+		                        <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
+		                    </div>
+		                </div>
+		            </div>
+            
+		            <p><a href="#booking" class="btn btn--lg btn--brand-aqua btn--ghost js-anchor-nav">Contact The Team</a></p>
+					
                 </div>
-            </div>
+               
+			</div>
             
             
             
-            <h3>Our Team</h3>
-            
-            <div class="grid g-gutter-lg">
-                <div class="g-col-md-4">
-                    <div>
-                        <h4>Gareth Ison <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4> 
-                        <p>Gareth is a qualified competent occupational hygienist with 20 years experience working in the occupational hygiene industry.</p>
-                    </div>
-                </div>
-                <div class="g-col-md-4">
-                    <div>
-                        <h4>Helen Thomas <em>(<abbr title="Associate Membership of the Faculty of Occupational Hygiene">AFOH</abbr>)</em></h4>
-                        <p>Helen is a competent occupational hygienist with approximately 6 years experience working in the occupational hygiene industry.</p>
-                    </div>
-                </div>
-                <div class="g-col-md-4">
-                    <div>
-                        <h4>Andy Wallace <em>(<abbr title="Licentiate Membership of the Faculty of Occupational Hygiene">LFOH</abbr>)</em></h4>
-                        <p>Andy is a qualified competent occupational hygienist with over 5 years experience working in the occupational hygiene industry.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <p><a href="#booking" class="btn btn--lg btn--brand-aqua btn--ghost js-anchor-nav">Contact The Team</a></p>
         </div>
     </section>
     
-    
-    
-    <section class="u-clearfix u-fill-neutral-lighter" id="booking">
+	
+    <section class="u-clearfix" id="booking">
         <hr class="striped u-space-none" />
         <div class="u-section-lg u-container-lg">
             <header class="title">
@@ -255,39 +270,39 @@
                     <form action="" autocomplete="off" class="">
                 
                         <div class="field-group">
-                            <label class="field-group__label">Your Name</label>
+                            <label class="field-group__label required">Your Name</label>
                             <div class="field-group__field">
                                 <input id="text" type="text" placeholder="What is your name?" required>
                             </div>
                         </div>
                 
                         <div class="field-group">
-                            <label class="field-group__label">Your Telephone</label>
+                            <label class="field-group__label required">Your Telephone</label>
                             <div class="field-group__field">
                                 <input id="text" type="number" placeholder="Please include area/country code" required>
                             </div>
                         </div>
                 
                         <div class="field-group">
-                            <label class="field-group__label">Your Email</label>
+                            <label class="field-group__label required">Your Email</label>
                             <div class="field-group__field">
                                 <input id="text" type="email" placeholder="We never send spam" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </div>
                         </div>
                 
                         <div class="field-group">
-                            <label class="field-group__label na">Your Message</label>
+                            <label class="field-group__label">Your Message</label>
                             <div class="field-group__field">
                                 <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
                             </div>
                         </div>
                 
                         <p><button type="submit" class="btn btn--lg btn--brand-aqua">Book a Consultation</button></p>
-                        <p class="micro"><span class="na"></span> Denotes not required.</p>
+                        <p class="micro"><span class="required"></span> Denotes required.</p>
                     </form>
                 </div>
-                <div class="g-col-md-6">
-                    <div class="card" style="margin-bottom: 0; margin-top: -4em; border-radius: 0;">
+                <div class="g-col-md-5">
+                    <div class="card">
                         <div class="card__header">
                             <h4>Prefer to contact us by other means?</h4>
                         </div>

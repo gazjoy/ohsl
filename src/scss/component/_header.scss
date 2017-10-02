@@ -103,6 +103,6 @@ $header-height: 5.6em;
     display: block;
     width: 130px;
     @include breakpoint(max-width screen(xs, max)) {
-        max-width: 90px;
+        max-width: 70px;
     }
 }
