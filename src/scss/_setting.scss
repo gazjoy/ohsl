@@ -50,6 +50,18 @@ $buttons: (
             border-color        : color(brand, steel),
             color               : color(neutral, white)
         )
+    ),
+    brand-sky: (
+        default: (
+            background          : color(brand, sky),
+            border-color        : color(brand, sky),
+            color               : color(brand, steel)
+        ),
+        hover: (
+            background          : lighten(color(brand, sky), 10%),
+            border-color        : color(brand, sky),
+            color               : color(brand, steel)
+        )
     )
 );
 

@@ -128,14 +128,27 @@ optgroup {
     margin-left: spacing(xs);
 }
 
-.is-invalid,
-%is-invalid,
-:invalid {
-    border-color: color(contextual, error);
-}
+//.is-invalid,
+//%is-invalid,
+//:invalid {
+//    border-color: color(contextual, error);
+//}
+//
+//.is-valid,
+//%is-valid,
+//:valid {
+//    border-color: color(contextual, success);
+//}
 
-.is-valid,
-%is-valid,
-:valid {
-    border-color: color(contextual, success);
+
+input.error,
+select.error,
+textarea.error {
+  outline: none;
+  border-color: red;
+  
+  // Use CSS to visually restore valid fields
+  &:valid {
+    border-color: inherit;
+  }
 }
