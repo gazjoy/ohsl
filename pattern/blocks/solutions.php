@@ -19,7 +19,7 @@ Solutions Block
         <div class="grid g-gutter">
         
             <div class="g-col-sm-6 g-col-md-4 u-full-height">
-                <a href="/pattern/template/noise-monitoring/base?preview=true" class="card">
+                <a href="<?php echo getUrl('pattern/template/noise-monitoring/base?preview=true'); ?>" class="card">
                     <img src="<?php echo getUrl('build/img/services/noise-monitoring.jpg'); ?>" width="590" height="325" alt="Noise Monitoring" />
                     <div class="card__body">
                         <h3 class="h4">Noise Monitoring</h3>
@@ -29,7 +29,7 @@ Solutions Block
             </div>
             
             <div class="g-col-sm-6 g-col-md-4 u-full-height">
-                <a href="/pattern/template/air-monitoring/base?preview=true" class="card">
+                <a href="<?php echo getUrl('pattern/template/air-monitoring/base?preview=true'); ?>" class="card">
                     <img src="<?php echo getUrl('build/img/services/air-monitoring.jpg'); ?>" width="590" height="325" alt="Air Monitoring" />
                     <div class="card__body">
                         <h3 class="h4">Air Monitoring</h3>
