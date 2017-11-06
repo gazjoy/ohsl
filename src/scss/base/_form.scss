@@ -16,7 +16,7 @@ label {
     margin-bottom: spacing(xs);
 }
 
-input,
+input:not([type="submit"]),
 textarea,
 select[multiple=multiple] {
     background-color: color(neutral, white);
