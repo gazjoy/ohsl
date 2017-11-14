@@ -10,8 +10,10 @@
                 <li><a href="#solutions" class="js-anchor-nav">Solutions</a></li>
                 <li><a href="#profile" class="js-anchor-nav">Profile</a></li>
                 <li><a href="#booking" class="js-anchor-nav">Contact</a></li>
-                <li class="u-hidden-xs u-hidden-sm"><a href="tel: <?php printData('company', 'telephone'); ?>">Call: <?php printData('company', 'telephone'); ?></a></li>
             </ol>
         </nav>
+		<div class="header__tel u-hidden-xs u-hidden-sm">
+			<a href="tel: <?php printData('company', 'telephone'); ?>">Call: <?php printData('company', 'telephone'); ?></a>
+		</div>
     </div>
 </header>

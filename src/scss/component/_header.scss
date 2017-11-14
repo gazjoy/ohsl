@@ -82,15 +82,27 @@ $header-height: 5.6em;
         > *:first-child {
             margin-left: auto;
         }
-        > *:last-child {
-            margin-left: auto;
-        }
+		@include breakpoint(screen(md)) {
+	        > *:last-child {
+	            margin-right: auto;
+	        }
+		}
     }
     @include breakpoint(max-width screen(xs, max)) {
         font-size: 80%;
     }
     @include breakpoint(screen(lg)) {
         font-size: 130%;
+    }
+}
+
+.header__tel {
+	margin-left: auto;
+	flex-shrink: 0;
+    @extend %u-text-uppercase;
+    font-weight: $bold;
+    a:hover {
+        color: color(brand, aqua);
     }
 }
 
