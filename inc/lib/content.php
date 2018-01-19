@@ -68,9 +68,15 @@ class Content
         if($section) {
             $sectionTitle = ucwords(str_replace('-',' ',$section ));
             $title .= '<span class="cc-pattern__anchor" id="section-' . str_replace(' ', '-', strtolower($sectionTitle)) . '"></span><div class="cc-pattern__header">';
-            $title .= '<h3><a href="#section-' . str_replace(' ', '-', strtolower($sectionTitle)) . '"><svg class="icon icon--lg">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/build/img/vector/general/symbol/sprite-symbol.svg#link"></use>
-        </svg> ' . $sectionTitle . '</a></h3>';
+            $title .= '
+            <h3>
+                <a href="#section-' . str_replace(' ', '-', strtolower($sectionTitle)) . '">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="' . getUrl('build/img/vector/general/symbol/sprite-symbol.svg') . '#link" />
+                    </svg>
+                    ' . $sectionTitle . '
+                </a>
+            </h3>';
             $title .= "</div>";
         }
 
