@@ -3,7 +3,7 @@
     <div class="u-section-xs u-container-lg">
         <div class="grid g-stretch-first">
             <div>
-                <span class="micro">© <?php echo date('Y'); ?> <a href="../"><?php printData('company', 'name'); ?></a> • Telephone: <?php printData('company', 'telephone'); ?> • E-mail: <a href="mailto:<?php printData('company', 'email'); ?>"><?php printData('company', 'email'); ?></a> • <a href="/credit">Credit</a></span>
+                <span class="micro">© <?php echo gmdate('Y'); ?> <a href="../"><?php printData('company', 'name'); ?></a> • Telephone: <?php printData('company', 'telephone'); ?> • E-mail: <a href="mailto:<?php printData('company', 'email'); ?>"><?php printData('company', 'email'); ?></a> • <a href="/credit">Credit</a></span>
             </div>
             <div>
                 <span class="micro"><a href="//garethjoyce.co.uk">Made by @gazjoy</a></span>

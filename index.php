@@ -89,6 +89,9 @@
         </div><!--/#wrapper -->
     <?php endif; ?>
 
+    <?php printPattern('component/overlay/modal'); ?>
+    <div class="overlay" id="overlay" data-cc-toggle-action="deactivate" data-cc-toggle-target="#modal, #drawer-left, #drawer-right"></div>
+
     <script src="<?php echo getUrl('build/vendor/svgxuse/svgxuse.js'); ?>" async></script>
     <!--[if IE 9]>
         <script src="<?php echo getUrl('build/vendor/svg4everybody/svg4everybody.js'); ?>" async></script>

@@ -11,11 +11,11 @@
     @include align-items(center);
     
     &.is-active .toggle-icon__icon {
-        @include minus(color(neutral, light), 16px, 2px);
+        @include minus(color(neutral, light), 8px, 2px);
     }
 
     &:not(.is-active) .toggle-icon__icon {
-        @include plus(color(neutral, light), 16px, 2px);
+        @include plus(color(neutral, light), 8px, 2px);
     }
     
 }

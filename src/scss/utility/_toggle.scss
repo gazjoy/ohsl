@@ -80,14 +80,14 @@
  */
 
 [data-cc-toggle-action] {
-    cursor: pointer;
+    // cursor: pointer;
 
     &,
     * {
         -webkit-touch-callout: none;
     }
 
-    * {
-        cursor: auto;
-    }
+    // * {
+    //     cursor: auto;
+    // }
 }

@@ -33,5 +33,20 @@
 
         </div>
 
+        <div id="subnav" data-cc-toggle-target="#modal" data-cc-toggle-target-callback=".modal__close" class="u-toggle">
+            <ul class="nav nav--branded modal__nav">
+                <li><a href="<?php echo getUrl('/pattern/template/noise-monitoring/base?preview=true'); ?>">Noise Monitoring</a></li>
+                <li><a href="<?php echo getUrl('/pattern/template/air-monitoring/base?preview=true'); ?>">Air Monitoring</a></li>
+                <li><a href="<?php echo getUrl('/pattern/template/local-exhaust-ventilation/base?preview=true'); ?>">Local Exhaust Ventilation</a></li>
+                <li><a href="<?php echo getUrl('/pattern/template/hazardous-substances/base?preview=true'); ?>">Hazardous Substances</a></li>
+                <li><a href="<?php echo getUrl('/pattern/template/indoor-air-quality-lighting/base?preview=true'); ?>">Indoor Air Quality &amp; Lighting</a></li>
+            </ul>
+        </div>
+
+
     </div>
+    <a href="#" class="modal__close" data-cc-toggle-action="deactivate" data-cc-toggle-target="#modal">
+        <?php printSvg('general', 'cross'); ?>
+        <span class="u-visually-hidden">Close</span>
+    </a>
 </div>

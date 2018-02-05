@@ -7,9 +7,12 @@
     <div class="header__body">
         <nav class="header__nav">
             <ol class="nav nav--branded">
-                <li><a href="#solutions" class="js-anchor-nav">Solutions</a></li>
-                <li><a href="#profile" class="js-anchor-nav">Profile</a></li>
-                <li><a href="#booking" class="js-anchor-nav">Contact</a></li>
+                <li>
+                    <a href="<?php echo getUrl('/pattern/template/noise-monitoring/base?preview=true'); ?>" data-cc-toggle-action="activate" data-cc-toggle-target="#subnav">Solutions</a>
+                </li>
+                <li><a href="<?php echo getUrl('/pattern/template/training/base?preview=true'); ?>">Training</a></li>
+                <li><a href="<?php echo getUrl('/pattern/template/profile/base?preview=true'); ?>">Profile</a></li>
+                <li><a href="<?php echo getUrl('/pattern/template/contact/base?preview=true'); ?>">Contact</a></li>
             </ol>
         </nav>
 		<div class="header__tel u-hidden-xs u-hidden-sm">

@@ -20,11 +20,6 @@
     
     <?php printPattern('blocks/solutions'); ?>
     
-    <?php printPattern('blocks/profile'); ?>
-    
-	<?php printPattern('blocks/booking'); ?>
-    
-    
 </main>
 
 <?php printPattern('component/topper/base'); ?>

@@ -40,3 +40,33 @@ a%card {
         background-color: lighten(color(brand, sky), 10%);
     }
 }
+
+
+.card--inline {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
+        .card__header {
+            border-bottom: 0;
+            border-right: seperator(base, width) seperator(base, style) seperator(base, color);
+        }
+
+    //@include breakpoint(max-width screen(sm, max)) {
+        flex-wrap: wrap;
+
+        .card__body {
+            flex: 1;
+            
+        }
+        .card__footer {
+            width: 100%;
+        }
+    //}
+    // @include breakpoint(screen(md)) {
+    //     .card__footer {
+    //         border-top: 0;
+    //         border-left: seperator(base, width) seperator(base, style) seperator(base, color);
+    //     }
+    // }
+}

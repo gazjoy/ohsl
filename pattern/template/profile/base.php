@@ -2,7 +2,7 @@
 <?php printPattern('component/header/base'); ?>
 
 <main role="main">
-    <?php printPattern('blocks/booking'); ?>
+    <?php printPattern('blocks/profile'); ?>
 </main>
 
 <?php printPattern('component/footer/base'); ?>

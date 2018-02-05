@@ -1,7 +1,7 @@
 <section class="u-clearfix u-fill-neutral-lighter" id="profile">
     <hr class="striped u-space-none" />
     
-    <div class="u-section-sm u-container-lg">
+    <div class="u-section-lg u-container-lg">
 		
         <div class="grid g-gutter-x-lg">
             <div class="g-col-md-8">

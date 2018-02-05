@@ -67,7 +67,4 @@
     @extend %nav--pills;
     @extend %u-text-uppercase;
     font-weight: $bold;
-    a:hover {
-        color: color(brand, aqua);
-    }
 }
