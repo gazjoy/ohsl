@@ -1,6 +1,6 @@
 <div class="card card--inline u-space-xl-bottom">
- 	<div class="card__header">
-			<img src="<?php echo getUrl('build/img/training/course26.png'); ?>" width="120" height="120" alt="Abrasive Wheels" />
+ 	<div class="card__header u-hidden-xs">
+			<img src="<?php echo getUrl('build/img/training/course26.png'); ?>" alt="Abrasive Wheels" />
 		</div>
 
 		<div class="card__body">
